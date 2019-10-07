@@ -19,9 +19,8 @@
         </div>
         <div v-else class="mb-5 text-center">
           <p class="mt-4 text-center">
-            Ups, no hay nada que mostrarte
+            No hay nada que mostrar
           </p>
-          <img src="/img/not-found.png" />
         </div>
         <div class="container mt-5">
           <hr />
