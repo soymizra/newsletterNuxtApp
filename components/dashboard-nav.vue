@@ -1,28 +1,17 @@
 <template>
-  <header>
+  <header >
     <nav
-      class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
+      class="navbar fixed-top shadow-sm navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav"
     >
       <div class="breadcrumb-dn mr-auto">
-        <p>INSIDE</p>
+        <a href="#" class="brand">[INSIDE]
+          <span class="clearfix d-none d-sm-inline-block">
+              <i class="fas fa-tachometer-alt"></i>
+              Dashboard
+            </span>
+        </a>
       </div>
       <ul class="nav navbar-nav nav-flex-icons ml-auto">
-        <li class="nav-item">
-          <a class="nav-link">
-            <i class="fas fa-envelope"></i>
-            <span class="clearfix d-none d-sm-inline-block">
-              All Newsletters
-            </span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">
-            <i class="fas fa-comments"></i>
-            <span class="clearfix d-none d-sm-inline-block">
-              My Newsletters
-            </span>
-          </a>
-        </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -32,7 +21,7 @@
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Account
+            Hello {{ this.$store.state.user.name }}
           </a>
           <div
             class="dropdown-menu dropdown-menu-right"
@@ -50,3 +39,23 @@
 <script>
 export default {}
 </script>
+<style scoped>
+nav {
+  background: #ff5c03;
+}
+.brand {
+  font-size: 2em;
+  font-weight: 800;
+  color: #fff;
+}
+.nav-item {
+  color: #fff;
+  font-size: 1.2em;
+}
+.dropdown {
+  font-weight: 800;
+}
+.nav-link {
+  color: #fff;
+}
+</style>

@@ -32,7 +32,7 @@
         <a class="nav-item nav-link ml-5" href="#">
           <i class="fas fa-search navbar-icon"></i>
         </a>
-        <router-link class="nav-item nav-link ml-5" to="auth/login">
+        <router-link class="nav-item nav-link ml-5" to="/auth/login">
           <i class="far fa-user navbar-icon"></i>
         </router-link>
         <a class="btn-sponsorship ml-5">SPONSORSHIP</a>
