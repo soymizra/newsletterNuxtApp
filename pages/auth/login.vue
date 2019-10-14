@@ -76,11 +76,6 @@ export default {
           .then((response) => {
             const user = response.data
             this.login(user)
-            Swal.fire({
-              type: 'success',
-              title: 'Login',
-              text: `Welcome back ${this.formData.email}`
-            })
             this.$router.push('/account/dashboard')
           })
           .catch((error) => {
